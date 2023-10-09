@@ -1,0 +1,25 @@
+{
+  "name": "trazi",
+  "version": "0.0.1",
+  "description": "city population service",
+  "main": "./src/server",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./src/server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "docker build -t tarzi-api-image:latest .",
+    "docker:start": "docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "trazi_city_population_service"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/redis": "^6.1.1",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.23.2"
+  }
+}
