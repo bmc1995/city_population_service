@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  tarzi-api:
+  trazi-api:
     build:
       context: .
       dockerfile: Dockerfile
