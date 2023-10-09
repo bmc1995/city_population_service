@@ -1,5 +1,4 @@
 export async function getPopulationFromRedis(redis, state, city) {
-  console.log(`${state.toLowerCase()}-${city.toLowerCase()}`);
   return await redis.get(`${state.toLowerCase()}-${city.toLowerCase()}`);
 }
 
